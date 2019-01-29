@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ALTEN Hack</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<script>
+    var countDownDate = new Date("Apr 27, 2019 9:00:00").getTime();
+
+
+    var x = setInterval(function() {
+
+        var now = new Date().getTime();
+
+        var distance = countDownDate - now;
+
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+
+        document.getElementById("countdown").innerHTML = "QUEDAN: " + days + "d " + hours + "h " +
+            minutes + "m " + seconds + "s ";
+
+
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "00d 00h 00m 00s";
+        }
+    }, 1000);
+</script>
+
+<script>
+    $(document).ready(function() {
+        $(".ans").hide();
+        $(".spoiler").click(function() {
+            $(this).toggleClass("active").next().slideToggle();
+
+            if ($(this).is(".active")) {
+                $(this).children('i#icon').css('transform', 'rotate(-90deg)');
+            } else {
+                $(this).children('i#icon').css('transform', 'rotate(0deg)');
+            }
+
+
+
+            return false;
+        });
+        $("a[href='" + window.location.hash + "']").parent(".ans").click();
+    });
+</script>
+<script>
+    /* $(document).ready(function() {
+        alert($('#questions').height());
+    });*/
+    </script>
+
+<body>
+    <div class="header">
+        <ul class="head">
+            <li class="menu"><a href=""><span class="hackathon">&lt;Hackathon&gt;_</span></a></li>
+            <li class="menu"><a href="">FAQ</a></li>
+            <li class="menu"><a href="#join">ÚNETE,<span class="menu" id="countdown"></span></a></li>
+        </ul>
+    </div>
+    <div class="header separator">
+    </div>
+    <section class="first">
+        <div class="row">
+            <div class="c2" id="questions">
+                <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> Question1</button>
+                <div class="ans">this is answer 1 answer 1 goes here</div>
+                <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> Question2</button>
+                <div class="ans">this is answer 2 answer 2 goes here</div>
+                <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> Question3</button>
+                <div class="ans">this is answer 3 answer 3 goes here</div>
+                <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> Question4</button>
+                <div class="ans">this is answer 4 answer 4 goes here</div>
+                <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> Question5</button>
+                <div class="ans">this is answer 5 answer 5 goes here</div>
+            </div>
+            <div class="c2" id="about">
+                <h1 class="title">ABOUT</h1>
+                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio nobis consequatur expedita accusamus consequuntur at, esse magni adipisci natus, tempore, praesentium impedit voluptate quae illum animi! Doloremque commodi aliquid nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam unde deserunt quasi provident fugit architecto quibusdam. Ea aliquid eius dolores, minus quisquam magnam, laudantium, hic officiis animi ad tenetur? Tempore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, ea inventore, deserunt modi velit nobis, illum impedit sed assumenda architecto consectetur ad minus
+                    <a href="">Read more...</a>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="more" id="join">
+        <div class="row down">
+           <div class="c1" style="height:311px;border-right:none;border-bottom: none; border-left:10px solid white;"><h1 class="title">Social networks here?</h1></div>
+            <div class="c1">
+                <h1 class="title">JOIN</h1>
+                <form>
+                   
+
+                    <input type="text" name="firstname" placeholder="Nombre">
+                    <input type="text" name="lastname" placeholder="Apellidos">
+                     <input type="text" name="lastname" placeholder="E-Mail">
+                   
+                     <input type="submit">
+                </form>
+            </div>
+            
+
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,191 @@
+@import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
+/*PRESET*/
+@media only screen and (max-width: 768px) {
+  .c2 {
+    width: 100%!important;
+  }
+}
+
+* {
+    /*margin: 0;*/
+    padding: 10px;
+}
+
+form{
+    font-family: Hackathon;
+    color: #fff;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 1)
+}
+
+@font-face {
+  font-family: 'Hackathon';
+    src: url(assets/hackathon.ttf) format('truetype');
+}
+
+.hackathon{font-family: Hackathon}
+
+.row{
+    
+    margin-top: 20px;
+    width: auto;
+    height: auto;
+}
+
+.down{
+    margin-top: 10px;
+}
+
+.first{
+    margin-bottom: 10px;
+}
+
+.c1{
+    margin-top: 5%;
+    border: 10px solid white;
+    border-top: none;
+    border-left:none;
+    float: left;
+    width: 50%;
+    padding:2.5%; 
+    box-sizing: border-box;
+
+}
+
+.c2{
+    border: 10px solid white;
+    border-right: none;
+    float: left;
+    width: 50%;
+    padding:2.5%; 
+    box-sizing: border-box;
+}
+
+.title{font-family: Hackathon;color:white;font-size: 48px;padding-top: 0;margin-top: 0;}
+.text{font-family: Hackathon;color:white;padding-top: 0;margin-top: 0;}
+
+#countdown {
+    font-family: Hackathon;
+    font-weight: bold;
+    font-size: 100%;
+    padding: 5px 10px;
+}
+
+.backhead {
+    background: url(img/gridtile.png), url(img/testimage.jpg) no-repeat;
+    height: 100vh;
+}
+
+.header {
+
+
+}
+
+.separator{
+    background-image: url(img/fil.png);
+    widows: 100%;
+    background-repeat: repeat-x;
+}
+
+.cmenu {
+    float: left;
+    width: 100%;
+    height: auto;
+}
+
+ul.head {
+     display:inline-block;
+    list-style-type: none;
+    margin: 0 0 0 0;
+    /*padding:25px;*/
+    overflow: hidden;
+    font-family: Hackathon;
+    font-weight: bold;
+    font-size: 38px;
+
+}
+
+/*MENU*/
+li.menu {
+    background-color: rgba(255, 255, 255, 1);
+    float: left;
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.transparent {
+    color: black !important;
+    background-color: transparent !important;
+}
+
+li.menu a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 5px 10px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+li.menu a:hover {
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 1);
+    color: white
+}
+/*MENU*/
+
+.spoiler{
+    display: list-item;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: Hackathon;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+.spoiler:hover{
+    color:#ddd!important;
+}
+
+.ans{
+    text-align: center;
+    color: #fff;
+    font-family: Hackathon;
+    font-weight: 100;
+    font-size: 24px;
+}
+
+#about{
+    border:none;
+    border-right: 10px solid #008bd2;
+}
+
+#about>p>a{
+    color:#008bd2;
+    text-decoration: none
+}
+.title{
+    color:#fff;
+}
+
+input{
+    margin-top:10px;
+    margin-bottom: 5px;
+    color:white;
+    font-family:hackathon;
+    background-color: transparent;
+    outline: none;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    border-bottom:5px solid white;
+ 
+}
+
+label{
+    margin-top: 10px;
+}
