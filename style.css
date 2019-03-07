@@ -14,6 +14,7 @@
 form{
     font-family: Hackathon;
     color: #fff;
+    background-color: rgba(0,0,0,0.2)
 }
 
 body {
@@ -48,10 +49,13 @@ body {
     border-top: none;
     border-left:none;
     float: left;
-    width: 50%;
+    width: 100%;
     padding:2.5%; 
     box-sizing: border-box;
 
+}
+.noborder{
+    border: none!important
 }
 
 .c2{
@@ -152,21 +156,31 @@ li.menu a:hover {
 }
 
 .ans{
-    text-align: center;
+    text-align: ;
     color: #fff;
     font-family: Hackathon;
-    font-weight: 100;
-    font-size: 24px;
+    font-weight: italic;
+    font-size: 18px;
 }
 
 #about{
     border:none;
-    border-right: 10px solid #008bd2;
+    border-right: 10px solid #fff;
 }
 
 #about>p>a{
     color:#008bd2;
     text-decoration: none
+}
+.ans>a{
+    color:#008bd2;
+    text-decoration: none
+}
+
+.ans>iframe{
+   width: 100%;
+    padding: 0;
+    margin-top: 2%;
 }
 .title{
     color:#fff;
@@ -188,4 +202,18 @@ input{
 
 label{
     margin-top: 10px;
+}
+
+#map{
+    
+}
+
+.center{
+    text-align: center;
+}
+
+.bgjoin{
+    background-image: url("img/bgjoin.jpg");
+    background-size: cover;
+    background-attachment: fixed;
 }
