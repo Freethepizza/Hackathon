@@ -33,26 +33,7 @@
     }, 1000);
 </script>
 
-<script>
-    $(document).ready(function() {
-        $(".ans").hide();
-        $(".spoiler").click(function() {
-            $(this).toggleClass("active").next().slideToggle();
 
-            if ($(this).is(".active")) {
-                $(this).children('i#icon').css('transform', 'rotate(-90deg)');
-            } else {
-                $(this).children('i#icon').css('transform', 'rotate(0deg)');
-            }
-
-
-
-            return false;
-        });
-        $("a[href='" + window.location.hash + "']").parent(".ans").click();
-    });
-    
-</script>
 
 <body>
     <div class="header">
@@ -65,7 +46,7 @@
     <div class="header separator">
     </div>
     <div class="row">
-        <div class="c2" id="questions">
+        <div class="c1" id="questions" style="margin-top: 0">
             <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> ¿Quién puede unirse?</button>
             <div class="ans">Cualquiera mayor de 18 años que hable inglés. Ingenieros, full-stack-, frontend-, backend-, mobile developers, estudiantes , innovadores y todo aquel con pasión por la tecnología y los deportes.
                 Desde nuestra experiencia, la diversidad de habilidades en los diferentes equipos lleva a la creación de excelentes soluciones, ¡Únete!
@@ -91,13 +72,9 @@
         map.style.display = ('block');
     }
     </script>
-
-        <div class="c2" id="about" style="padding-top:0">
-            <img class="abouta" src="img/carteles/pegatina%20a-hack%20p2.jpg" alt="">
-        </div>
     </div>
-    <div class="row down">
-        <div id="join" class="c1 center bgjoin">
+
+        <div id="join" class="c1 center bgjoin" style="margin-top: 1%;" >
             <h1 class="title">¿TE APUNTAS?</h1>
             <form>
                 <input type="text" name="firstname" placeholder="Nombre">
@@ -111,8 +88,8 @@
             <h1 class="title">Social networks here?</h1>
         </div>
 
-    </div>
-<div class="c1 noborder noborder nopadding bgwtrans ">
+
+<div class="c1 noborder noborder nopadding  bgwtrans ">
    <div class="c2 noborder nopadding">
     <svg id="logo" class="bgwtrans" viewBox="0 0 74 120" width="54px" height="54px">
       <polygon fill="#FFF02A" points="62.7678019 2.99071207 70.473065 2.99071207 70.473065 105.737461 3.00185759 105.737461 3.00185759 84.8470588"></polygon>
