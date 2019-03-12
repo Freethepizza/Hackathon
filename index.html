@@ -2,12 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>ALTEN Hack</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Alten-Hack</title>
+    <link rel="stylesheet" href="style2.css">
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
-<script>
-    var countDownDate = new Date("Apr 27, 2019 9:00:00").getTime();
+
+<body>
+    <script>
+        var countDownDate = new Date("Apr 26, 2019 9:00:00").getTime();
 
 
     var x = setInterval(function() {
@@ -22,7 +24,7 @@
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
-        document.getElementById("countdown").innerHTML = "QUEDAN: " + days + "d " + hours + "h " +
+        document.getElementById("countdown").innerHTML = "ÚNETE QUEDAN: " + days + "d " + hours + "h " +
             minutes + "m " + seconds + "s ";
 
 
@@ -33,39 +35,19 @@
     }, 1000);
 </script>
 
-<script>
-    $(document).ready(function() {
-        $(".ans").hide();
-        $(".spoiler").click(function() {
-            $(this).toggleClass("active").next().slideToggle();
-
-            if ($(this).is(".active")) {
-                $(this).children('i#icon').css('transform', 'rotate(-90deg)');
-            } else {
-                $(this).children('i#icon').css('transform', 'rotate(0deg)');
-            }
-
-
-
-            return false;
-        });
-        $("a[href='" + window.location.hash + "']").parent(".ans").click();
-    });
-    
-</script>
-
-<body>
-    <div class="header">
-        <ul class="head">
-            <li class="menu"><a href=""><span class="hackathon">&lt;a-Hack&gt;_</span></a></li>
-            <li class="menu"><a href="">FAQ</a></li>
-            <li class="menu"><a href="#join">ÚNETE,<span class="menu" id="countdown"></span></a></li>
-        </ul>
-    </div>
-    <div class="header separator">
-    </div>
-    <div class="row">
-        <div class="c2" id="questions">
+    <ul>
+        <li>
+            <h1>altenhack.</h1>
+        </li>
+        <li>
+            <h2 id="countdown"></h2>
+        </li>
+        <li>
+            <h2>FAQ</h2>
+        </li>
+    </ul>
+    <div class="container triangle bg-white" style="margin-top: 10px">
+        <div class="c-a padding">
             <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> ¿Quién puede unirse?</button>
             <div class="ans">Cualquiera mayor de 18 años que hable inglés. Ingenieros, full-stack-, frontend-, backend-, mobile developers, estudiantes , innovadores y todo aquel con pasión por la tecnología y los deportes.
                 Desde nuestra experiencia, la diversidad de habilidades en los diferentes equipos lleva a la creación de excelentes soluciones, ¡Únete!
@@ -85,133 +67,39 @@
                 <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11922.713048985426!2d-4.705256!3d41.662693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa91659b5c99b4932!2sEscuela+T%C3%A9cnica+Superior+de+Ingenieros+de+Telecomunicaci%C3%B3n.+Universidad+de+Valladolid!5e0!3m2!1ses!2ses!4v1551956769351" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
         </div>
         <script>
-            function Showmap(){
-       alert("hola")
-        map = document.getElementById("map");
-        map.style.display = ('block');
-    }
-    </script>
-<script>!function(exports) {
-  exports.submitGoogleForm = submitGoogleForm;
+            $(document).ready(function() {
+        $(".ans").hide();
+        $(".spoiler").click(function() {
+            $(this).toggleClass("active").next().slideToggle();
 
-  function submitGoogleForm(form) {
-    try {
-      var data = [].slice.call(form).map(function(control) {
-        return 'value' in control && control.name ?
-          control.name + '=' + (control.value === undefined ? '' : control.value) :
-          '';
-      }).join('&');
-      var xhr = new XMLHttpRequest();
+            if ($(this).is(".active")) {
+                $(this).children('i#icon').css('transform', 'rotate(-90deg)');
+            } else {
+                $(this).children('i#icon').css('transform', 'rotate(0deg)');
+            }
 
-      xhr.open('POST', form.action + '/formResponse', true);
-      xhr.setRequestHeader('Accept',
-          'application/xml, text/xml, */*; q=0.01');
-      xhr.setRequestHeader('Content-type',
-          'application/x-www-form-urlencoded; charset=UTF-8');
-      xhr.send(data);
-    } catch(e) {}
 
-    form.parentNode.className += ' submitted';
 
-    return false;
-  }
-}(typeof module === 'undefined' ? window : module.exports);</script>
-        <div class="c2" id="about" style="padding-top:0">
-            <img class="abouta" src="img/carteles/pegatina%20a-hack%20p2.jpg" alt="">
-        </div>
-    </div>
+            return false;
+        });
+        $("a[href='" + window.location.hash + "']").parent(".ans").click();
+    });
     
-    <div class="row down">
-        <div class="c1 center bgjoin">
-            <h1 class="title">¿TE APUNTAS?</h1>
-            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" target="_blank" method="POST" onsubmit="return window.submitGoogleForm(this);">
-                <input type="text" name="entry.1895290500" placeholder="Nombre">
-                <input type="text" name="entry.1169299309" placeholder="Apellidos">
-                <input type="text" name="entry.137172703" placeholder="E-Mail">
-
-                <input type="submit">
-            </form>
-        </div>
-        <div class="c1" style="background-image: url(img/bg2.jpg);background-attachment: fixed;background-size: cover;">
-            <h1 class="title">Social networks here?</h1>
-        </div>
-
+</script>
+        <div class="c-b bg-sticker"><img class="ahack" src="img/carteles/pegatina%20altenhack%20p1.jpg" alt=""></div>
     </div>
-<div class="c1 noborder noborder bgwtrans ">
-   <div class="c2 noborder nopadding">
-    <svg id="logo" class="bgwtrans" viewBox="0 0 74 120" width="54px" height="54px">
-      <polygon fill="#FFF02A" points="62.7678019 2.99071207 70.473065 2.99071207 70.473065 105.737461 3.00185759 105.737461 3.00185759 84.8470588"></polygon>
-      <polygon fill="#EB212E" points="2.96842105 2.96842105 3.00185759 84.676161 62.7640867 2.99071207"></polygon>
-      <path d="M73.4860681,108.687307 L0,108.687307 L0,0 L73.4860681,0 L73.4860681,108.687307 Z M2.7752322,105.912074 L70.7108359,105.912074 L70.7108359,2.7752322 L2.7752322,2.7752322 L2.7752322,105.912074 Z" fill="#FFFFFF"></path>
-      <path d="M1.57894737,1.57894737 L1.57894737,107.108359 L71.9034056,107.108359 L71.9034056,1.57894737 L1.57894737,1.57894737 Z M69.1318885,4.35417957 L69.1318885,104.333127 L4.35417957,104.333127 L4.35417957,4.35417957 L69.1318885,4.35417957 Z" fill="#000000"></path>
-      <polygon fill="#0096D7" points="61.7609907 4.36904025 1.71640867 86.3739938 8.69349845 86.6897833 61.2334365 15.4402477"></polygon>
-      <polygon fill="#000000" points="54.326935 52.8148607 26.7380805 34.5882353 56.5040248 19.679257"></polygon>
-      <polygon fill="#000000" points="52.625387 83.1380805 32.2365325 83.1455108 42.479257 65.3535604"></polygon>
-      <path d="M37.549226,93.1541796 C37.593808,88.9560372 46.8371517,89.2978328 50.6563467,93.1541796 L37.549226,93.1541796 Z" fill="#EB212E"></path>
-      <path d="M4.93374613,118.209288 L3.81919505,119.643344 L1.04396285,119.643344 L6.31578947,112.662539 L8.35913313,112.662539 L13.4897833,119.628483 L10.6736842,119.628483 L9.63343653,118.194427 L4.93374613,118.209288 Z M7.21114551,114.657585 L7.17399381,114.657585 L5.6879257,117.128173 L8.91640867,117.128173 L7.21114551,114.657585 Z"></path>
-      <polygon points="22.4879257 118.491641 26.203096 118.491641 26.203096 119.628483 19.8501548 119.628483 19.8501548 112.840867 22.4879257 112.840867"></polygon>
-      <polygon points="37.0105263 119.628483 34.3727554 119.628483 34.3727554 113.981424 31.6458204 113.981424 31.6458204 112.826006 39.752322 112.826006 39.752322 113.981424 37.0105263 113.981424"></polygon>
-      <polygon points="48.8990712 113.996285 48.8990712 115.482353 53.0934985 115.482353 53.0934985 116.656347 48.8990712 116.656347 48.8990712 118.513932 53.2569659 118.513932 53.2569659 119.628483 46.2613003 119.628483 46.2613003 112.840867 53.2569659 112.840867 53.2569659 113.996285"></polygon>
-      <polygon points="60.5572755 112.662539 62.4594427 112.662539 69.577709 117.417957 69.6148607 117.417957 69.6148607 112.840867 72.2489164 112.840867 72.2489164 119.780805 70.3467492 119.780805 63.228483 115.025387 63.1950464 115.025387 63.1950464 119.628483 60.5572755 119.628483"></polygon>
-    </svg>
-       </div>
-       <div class="c2 noborder nopadding" style="text-align: right">
-    <svg class="bgwtrans" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 302 204.27155" height="52" width="80" version="1.1">
- <g>
-  <g transform="matrix(21.955 0 0 -21.955 -2043.1 10481)">
-   <g clip-path="url(#d)">
-    <g transform="translate(105.72 468.11)">
-     <path d="m0 0c-0.639 0-1.018 0.327-1.047 0.798h0.611c0-0.157 0.087-0.366 0.465-0.379 0.262 0 0.407 0.157 0.407 0.275-0.029 0.183-0.262 0.196-0.494 0.236-0.262 0.038-0.465 0.091-0.611 0.156-0.203 0.105-0.32 0.328-0.32 0.563 0 0.419 0.35 0.746 0.96 0.746 0.582 0 0.96-0.301 0.988-0.759h-0.581c0 0.117-0.029 0.314-0.378 0.314-0.233 0-0.378-0.039-0.407-0.209 0-0.236 0.494-0.223 0.872-0.314 0.349-0.092 0.582-0.314 0.582-0.629 0-0.576-0.465-0.798-1.047-0.798"/>
-    </g>
-   </g>
-  </g>
-  <g transform="matrix(21.955 0 0 -21.955 33.537 118.8)">
-   <path d="m0 0 2.006 1.165 1.076-1.846h-2.704"/>
-  </g>
-  <g transform="matrix(21.955 0 0 -21.955 126.15 202.12)">
-   <path d="m0 0v2.33" stroke="#000" stroke-width="0.587"/>
-  </g>
-  <g transform="matrix(21.955 0 0 -21.955 -2043.1 10481)">
-   <g clip-path="url(#c)">
-    <g transform="translate(93.655 469.31)">
-     <path d="m0 0c0-0.366 0.32-0.667 0.668-0.667 0.379 0 0.669 0.301 0.669 0.667 0 0.353-0.29 0.667-0.669 0.667-0.348 0-0.668-0.314-0.668-0.667m0.639-1.204c-0.639 0-1.191 0.537-1.191 1.204s0.552 1.191 1.191 1.191c0.262 0 0.495-0.066 0.698-0.209v0.183h0.582v-2.316h-0.582v0.144c-0.174-0.131-0.436-0.197-0.698-0.197"/>
-    </g>
-   </g>
-  </g>
-  <g transform="matrix(21.955 0 0 -21.955 197.59 133.74)">
-   <path d="m0 0-2.791 4.868 2.006 1.178 3.489-6.046"/>
-  </g>
-  <g transform="matrix(21.955 0 0 -21.955 -2043.1 10481)">
-   <g clip-path="url(#b)">
-    <g transform="translate(96.33 469.31)">
-     <path d="m0 0c0-0.366 0.291-0.667 0.669-0.667 0.348 0 0.669 0.301 0.669 0.667 0 0.353-0.321 0.667-0.669 0.667-0.378 0-0.669-0.314-0.669-0.667m0.64-1.204c-0.669 0-1.192 0.537-1.192 1.204s0.523 1.191 1.192 1.191c0.261 0 0.494-0.066 0.698-0.209v0.981h0.581v-3.114h-0.581v0.144c-0.204-0.131-0.437-0.197-0.698-0.197"/>
-    </g>
-   </g>
-  </g>
-  <g transform="matrix(21.955 0 0 -21.955 85.247 73.119)">
-   <path d="m0 0 2.035 1.151 2.239-3.912h-2.123v-0.576h-0.581v0.576"/>
-  </g>
-  <g transform="matrix(21.955 0 0 -21.955 -2043.1 10481)">
-   <g clip-path="url(#a)">
-    <g transform="translate(106.39 470.7)">
-     <path d="m0 0c-0.146 0-0.291 0.131-0.291 0.288s0.145 0.288 0.291 0.288c0.174 0 0.291-0.131 0.291-0.288s-0.117-0.288-0.291-0.288m0 0.536c-0.146 0-0.233-0.117-0.233-0.248s0.087-0.249 0.233-0.249c0.145 0 0.232 0.118 0.232 0.249s-0.087 0.248-0.232 0.248"/>
-    </g>
-    <g transform="translate(106.45 470.83)">
-     <path d="m0 0-0.058 0.131h-0.058v-0.131h-0.044v0.314h0.131c0.029 0 0.087-0.04 0.087-0.092s-0.029-0.078-0.058-0.091l0.058-0.131m-0.116 0.274h-0.058v-0.104h0.058c0.058 0 0.058 0.013 0.058 0.052 0 0.027 0 0.052-0.058 0.052"/>
-    </g>
-    <g transform="translate(102.55 469.31)">
-     <path d="m0 0c0-0.366 0.291-0.667 0.669-0.667 0.349 0 0.668 0.301 0.668 0.667 0 0.353-0.319 0.667-0.668 0.667-0.378 0-0.669-0.314-0.669-0.667m0.639-1.204c-0.668 0-1.191 0.537-1.191 1.204s0.523 1.191 1.191 1.191c0.262 0 0.495-0.066 0.698-0.209v0.183h0.553v-2.316h-0.553v0.144c-0.203-0.131-0.436-0.197-0.698-0.197"/>
-    </g>
-    <g transform="translate(99.877 469.31)">
-     <path d="m0 0c0-0.366 0.32-0.667 0.669-0.667 0.378 0 0.669 0.301 0.669 0.667 0 0.353-0.291 0.667-0.669 0.667-0.349 0-0.669-0.314-0.669-0.667m1.338 1.963h0.581v-3.114h-0.581v0.144c-0.175-0.131-0.408-0.197-0.669-0.197-0.669 0-1.221 0.537-1.221 1.204s0.552 1.191 1.221 1.191c0.261 0 0.494-0.066 0.669-0.209v0.981z"/>
-    </g>
-   </g>
-  </g>
- </g>
-</svg><img class="bgwtrans" src="img/uva_logo.png" width="52" alt="">
-   <img class="bgwtrans" src="img/etsit_logo.png" width="46" alt="">
+    <div class="container-f bg-hack">
+        <h1>Únete</h1>
+        <form action="" class="center">
+            <input type="text" placeholder="Nombre">
+            <input type="text" placeholder="Apellidos">
+            <input type="text" placeholder="E-mail">
+            <input type="submit">
+        </form>
     </div>
-        </div>
-
+    <div class="container margin-a">
+        <div class="c-a">logo alten</div>
+        <div class="cb">logos adidas, uva, cocacola</div>
+    </div>
 </body>
 </html>

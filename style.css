@@ -1,214 +1,23 @@
+/*STRETCH FW*/
 @import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
-
-/*PRESET*/
-@media only screen and (max-width: 768px) {
-    .c2 {
-        width: 100% !important;
-    }
-}
-
-* {
-    /*margin: 0;*/
-    padding: 10px;
-}
-
-form {
-    font-family: Hackathon;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.2)
-}
-
-body {
-    background-color: rgba(0, 0, 0, 1)
-}
-
-@font-face {
-    font-family: 'Hackathon';
-    src: url(assets/hackathon.ttf) format('truetype');
-}
-
-.hackathon {
-    font-family: Hackathon
-}
-
-.row {
-
-    margin-top: 20px;
-    width: auto;
-    height: auto;
-}
-
-.down {
-    margin-top: 10px;
-}
-
-.first {
-    margin-bottom: 10px;
-}
-
-.c1 {
-    margin-top: 5%;
-    border: 10px solid white;
-    border-top: none;
-    border-left: none;
-    float: left;
-    width: 100%;
-    padding: 2.5%;
-    box-sizing: border-box;
-
-}
-
-.noborder {
-    border: none !important
-}
-
-.nopadding {
-    padding: 0 !important;
-}
-
-.c2 {
-    border: 10px solid white;
-    border-right: none;
-    float: left;
-    width: 50%;
-    padding: 2.5%;
-    box-sizing: border-box;
-}
-
-.title {
-    font-family: Hackathon;
-    color: white;
-    font-size: 48px;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-.text {
-    font-family: Hackathon;
-    color: white;
-    padding-top: 0;
-    margin-top: 0;
-}
-
-#countdown {
-    font-family: Hackathon;
-    font-weight: bold;
-    font-size: 100%;
-    padding: 5px 10px;
-}
-
-.backhead {
-    background: url(img/gridtile.png), url(img/testimage.jpg) no-repeat;
-    height: 100vh;
-}
-
-.header {}
-
-.separator {
-    background-image: url(img/fil.png);
-    widows: 100%;
-    background-repeat: repeat-x;
-}
-
-.cmenu {
-    float: left;
-    width: 100%;
-    height: auto;
-}
-
-ul.head {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0 0 0 0;
-    /*padding:25px;*/
-    overflow: hidden;
-    font-family: Hackathon;
-    font-weight: bold;
-    font-size: 38px;
-
-}
-
-/*MENU*/
-li.menu {
-    background-color: rgba(255, 255, 255, 1);
-    float: left;
-    margin-left: 0;
-    margin-right: 5px;
-}
-
-.transparent {
-    color: black !important;
-    background-color: transparent !important;
-}
-
-li.menu a {
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 5px 10px;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-li.menu a:hover {
-    transition: 0.5s;
-    background-color: rgba(0, 0, 0, 1);
-    color: white
-}
-
-/*MENU*/
-
-.spoiler {
-    display: list-item;
-    background-color: transparent;
-    border: none;
-    outline: none;
-    color: #fff;
-    font-family: Hackathon;
-    font-weight: 100;
-    font-size: 24px;
-}
-
-.spoiler:hover {
-    color: #ddd !important;
-}
-
-.ans {
-    text-align: ;
-    color: #fff;
-    font-family: Hackathon;
-    font-weight: italic;
-    font-size: 18px;
-}
-
-#about {
-    border: none;
-    border-right: 10px solid #fff;
-}
-
-#about > p > a {
-    color: #008bd2;
-    text-decoration: none
-}
-
-.ans > a {
-    color: #008bd2;
-    text-decoration: none
-}
-
-.ans > iframe {
-    width: 100%;
-    padding: 0;
-    margin-top: 2%;
-}
-
-.title {
-    color: #fff;
-}
-
+@font-face {font-family: 'Hackathon';src: url(assets/hackathon.ttf) format('truetype');}
+body{margin:50px;background: #ddd;}
+.container{display: grid;grid-template-columns: 1fr 1fr;align-items: center;
+    justify-content: center;}
+.bg-white{background: #fff;}
+.container-f{display: grid;grid-template-columns: 1fr;}
+.bg-hack{background-image: url(img/bgjoin.jpg);background-attachment: fixed; background-size: cover;background-repeat: no-repeat;background-position: bottom;}
+.ahack{width: 100%;}
+.c-a{width: 100%;}
+.c-b{width: 100%;;}
+.padding{padding: 20px;}
+.spoiler {display: list-item;background-color: transparent;border: none;outline: none;color: #555;font-family: Hackathon;font-weight: 100;font-size: 24px;font-family: Hackathon;}
+.triangle{background-image: url(img/triangle.png);background-size: cover;}
+.spoiler:hover {color: #333 !important;}
+.ans{font-family: Hackathon;width: 90%;color:#333;}
 input {
     margin-top: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 40px;
     color: white;
     font-family: hackathon;
     background-color: transparent;
@@ -217,39 +26,12 @@ input {
     border-right: none;
     border-left: none;
     border-bottom: 5px solid white;
-
 }
-
-label {
-    margin-top: 10px;
-}
-
-#map {}
-
-.center {
-    text-align: center;
-}
-
-.bgjoin {
-    background-image: url("img/bgjoin.jpg");
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-.bgwtrans {
-    background-color: rgba(255, 255, 255, 1)
-}
-
-.white {
-    color: #fff;
-    font-family: hackathon;
-}
-
-.abouta {
-    width: 100%;
-    padding-top: 0px !important;
-}
-
-.ptop0{
-    padding-top: 0!important;
-}
+.margin-a{margin-top: 20px;}
+.center{text-align: center;}
+.container-f>h1{font-family: hackathon;color:#fff;text-align: center;font-weight: 100;}
+ul{display: inline;padding-left: 0;}
+ul>li{display: inline;list-style: none;padding-right: 25px;}
+li>h1{font-family: hackathon;color:#333;display: inline;font-size: 42px;}
+li>h2{font-family: hackathon;color:#555;display: inline;}
+h2:hover{color: #333!important}
