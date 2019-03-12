@@ -32,8 +32,15 @@ input {
 .center{text-align: center;}
 .container-f>h1{font-family: hackathon;color:#fff;text-align: center;font-weight: 100;}
 ul{display: inline;padding-left: 0;}
-ul>li{display: inline;list-style: none;padding-right: 25px;}
+ul.menu>li{display: inline;list-style: none;padding-right: 25px;}
 ul>li>a{text-decoration: none;display: inline;}
-li>h1{font-family: hackathon;color:#333;display: inline;font-size: 42px;}
+li>a>h1{font-family: hackathon;color:#333;display: inline;font-size: 42px;}
 li>a>h2{font-family: hackathon;color:#555;display: inline;}
 h2:hover{color: #333!important}
+.footlink{font-family: hackathon;text-decoration: none;color:#999;font-size: 12px;}
+.footlink:hover{color:#333;}
+.darkbg{background:#111!important;}
+.container-f>p{font-family: hackathon; color:#333;}
+.container-f>ul>li{list-style: none;margin-bottom: 10px; font-family: hackathon; color:#333;text-align: left;padding: 0 20px 0 20px}
+.bg-white>h1{color: #333;}
+.container-f>h2{font-family: hackathon;color:#333;}
