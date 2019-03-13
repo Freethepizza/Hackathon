@@ -92,7 +92,7 @@
     </div>
     <div class="container-f bg-hack" id="join">
         <h1>Únete</h1>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" target="_blank" method="POST" class="center">
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" target="hidden" method="POST" class="center">
             <input type="text" name="entry.1895290500" placeholder="Nombre">
             <input type="text" name="entry.1169299309" placeholder="Apellidos">
             <input type="text" name="entry.137172703" placeholder="E-mail">
@@ -106,9 +106,13 @@
     <div class="container-f margin-a">
         <div class="c-b center" ><a class="footlink" href="codigo-de-conducta.html">Código de conducta</a>
         
-        <a class="footlink" href="">https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse?entry.1895290500="NOMBRE"&entry.1169299309="APELLIDOS"&entry.137172703=MAIL</a>
-        
+        <!--google forms reference
+        <a class="footlink hidden" href="">https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse?entry.1895290500="NOMBRE"&entry.1169299309="APELLIDOS"&entry.137172703=MAIL</a>
+        -->
         </div>
     </div>
+    <!--Hidden iframe to POST on google forms-->
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" name="hidden" class="hidden" frameborder="0"></iframe>
+     <!--Hidden iframe to POST on google forms-->
 </body>
 </html>
