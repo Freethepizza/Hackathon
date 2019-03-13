@@ -15,18 +15,7 @@ body{margin:50px;background: #ddd;}
 .triangle{background-image: url(img/triangle.png);background-size: cover;}
 .spoiler:hover {color: #333 !important;}
 .ans{font-family: Hackathon;width: 90%;color:#333;}
-input {
-    margin-top: 10px;
-    margin-bottom: 40px;
-    color: white;
-    font-family: hackathon;
-    background-color: transparent;
-    outline: none;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-bottom: 5px solid white;
-}
+input {margin-top: 10px;margin-bottom: 40px;color: white;font-family: hackathon;background-color: transparent;outline: none;border-top: none;border-right: none;border-left: none;border-bottom: 5px solid white;}
 .imgspacing{margin-right: 10px;}
 .margin-a{margin-top: 10px;}
 .center{text-align: center;}
@@ -44,3 +33,4 @@ h2:hover{color: #333!important}
 .container-f>ul>li{list-style: none;margin-bottom: 10px; font-family: hackathon; color:#333;text-align: left;padding: 0 20px 0 20px}
 .bg-white>h1{color: #333;}
 .container-f>h2{font-family: hackathon;color:#333;}
+.hidden{display: none;}
