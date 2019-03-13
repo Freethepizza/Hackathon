@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
     <script>
         var countDownDate = new Date("Apr 26, 2019 9:00:00").getTime();
 
@@ -92,12 +93,13 @@
     </div>
     <div class="container-f bg-hack" id="join">
         <h1>Únete</h1>
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" target="hidden" method="POST" class="center">
-            <input type="text" name="entry.1895290500" placeholder="Nombre">
-            <input type="text" name="entry.1169299309" placeholder="Apellidos">
-            <input type="text" name="entry.137172703" placeholder="E-mail">
+        
+        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" target="hidden" method="POST" class="center" onsubmit=""  name="join">
+            <input type="text" name="entry.1895290500" placeholder="Nombre" required>
+            <input type="text" name="entry.1169299309" placeholder="Apellidos" required>
+            <input type="email" name="entry.137172703" placeholder="E-mail" required>
             <input type="submit">
-        </form>
+        </form> 
     </div>
     <div class="container margin-a">
         <div class="c-a"><img src="img/altenlogo.png" alt="" width="50px"></div>
