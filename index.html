@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Alten-Hack</title>
@@ -13,111 +14,118 @@
         var countDownDate = new Date("Apr 26, 2019 9:00:00").getTime();
 
 
-    var x = setInterval(function() {
+        var x = setInterval(function() {
 
-        var now = new Date().getTime();
+            var now = new Date().getTime();
 
-        var distance = countDownDate - now;
+            var distance = countDownDate - now;
 
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-
-        document.getElementById("countdown").innerHTML = "ÚNETE QUEDAN: " + days + "d " + hours + "h " +
-            minutes + "m " + seconds + "s ";
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
 
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("countdown").innerHTML = "00d 00h 00m 00s";
-        }
-    }, 1000);
-</script>
+            document.getElementById("countdown").innerHTML = "ÚNETE QUEDAN: " + days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "00d 00h 00m 00s";
+            }
+        }, 1000);
+
+    </script>
 
     <ul class="menu">
         <li>
             <a href="index.html"><img src="img/logo.png" alt=""></a>
         </li>
-        <li><a href="#join"><h2 id="countdown"></h2></a>
+        <li>
+            <a href="#join">
+                <h2 id="countdown"></h2>
+            </a>
         </li>
         <li>
-            <a href=""><h2>FAQ</h2></a>
+            <a href="">
+                <h2>FAQ</h2>
+            </a>
         </li>
-        <li><a href="">
+        <li>
+            <a href="">
                 <h2>Retos</h2>
-            </a></li>
-            <li><a href="">
+            </a>
+        </li>
+        <li>
+            <a href="">
                 <h2>Premios</h2>
-            </a></li>
+            </a>
+        </li>
     </ul>
     <div class="container triangle bg-white" style="margin-top: 10px">
         <div class="c-a padding">
             <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> ¿Quién puede unirse?</button>
-            <div class="ans">Cualquiera mayor de 18 años que hable inglés. Ingenieros, full-stack-, frontend-, backend-, mobile developers, estudiantes , innovadores y todo aquel con pasión por la tecnología y los deportes.
-                Desde nuestra experiencia, la diversidad de habilidades en los diferentes equipos lleva a la creación de excelentes soluciones, ¡Únete!
+            <div class="ans">Ingenieros, desarrolladores software, desarrolladores de móviles (front y/o back), ingenieros de QA, estudiantes de grado o de formación profesional, con un <b>máximo de dos años de experiencia</b> desde la finalización de sus estudios, y con conocimientos en lenguaje de programación (java, javascript, phyton…). Desde nuestra experiencia, la diversidad de habilidades en los diferentes equipos lleva a la creación de excelentes proyectos. Si además, te apasionan los retos, la tecnología y el deporte, ¡no dudes en participar!
             </div>
-            <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i>¿Cuánto dura?</button>
-            <div class="ans">El tiempo de duración del evento será de 24 horas, durante las cuales se indicará el tiempo disponible para la finalización de cada reto</div>
+            <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i>¿Cómo se forman los equipos?</button>
+            <div class="ans">Cada equipo estará compuesto por <b>cinco integrantes</b>, que podrán inscribirse de forma conjunta. También podrás realizar tu inscripción de manera individual, y la organización del hackathon te asignará el equipo que considere que mejor se ajusta con tu perfil.</div>
+            
+            <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i>¿Cuánto dura el evento?</button>
+            <div class="ans">ALTEN hack comenzará el viernes, <b>26 de abril</b>, a las 16:00, y finalizará hacia las 19:00 del sábado, <b>27 de abril</b>, cuando se hayan entregado los premios.</div>
             <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> ¿Qué tengo que llevar?</button>
-            <div class="ans">Imprescindible traer equipo informático necesario para el desarrollo del evento.<br>
-                ¡El resto lo ponemos nosotros!</div>
-            <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i>¿Como se participa?</button>
-            <div class="ans">La participación se realiza por equipos, ningún participante podrá hacerlo solo, en caso contrario se le asignará un equipo de trabajo. <br>
-                Máximo 5 personas por equipo. </div>
-            <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> ¿Cuanto dura el evento?</button>
-            <div class="ans">El tiempo de duración del evento será de 24 horas, durante las cuales se indicará el tiempo disponible para la finalización de cada reto.</div>
-            <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> ¿Donde es?</button>
-            <div class="ans">
-                <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11922.713048985426!2d-4.705256!3d41.662693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa91659b5c99b4932!2sEscuela+T%C3%A9cnica+Superior+de+Ingenieros+de+Telecomunicaci%C3%B3n.+Universidad+de+Valladolid!5e0!3m2!1ses!2ses!4v1551956769351" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            <div class="ans">Es imprescindible que traigas tu <b>equipo informático</b>. ¡El resto lo ponemos nosotros! Ten en cuenta que el evento dura 24 horas ininterrumpidas, así que lo que consideres necesario para tu higiene personal, y descansar en el espacio que se habilitará para ello.</div>
+               <button class="spoiler"><i id="icon" class="fas fa-angle-down"></i> ¿Dónde tengo que acudir?</button>
+            <div class="ans">A tu llegada a la Escuela de Ingeniería Informática de la Uva, dirígete al vestíbulo principal para recoger tu acreditación. Una vez allí, te indicaremos cuáles son los siguientes pasos a seguir. ¡Te esperamos!
+              <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11922.713048985426!2d-4.705256!3d41.662693!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa91659b5c99b4932!2sEscuela+T%C3%A9cnica+Superior+de+Ingenieros+de+Telecomunicaci%C3%B3n.+Universidad+de+Valladolid!5e0!3m2!1ses!2ses!4v1551956769351" width="500" height="300" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+            </div>
+            <script>
+                $(document).ready(function() {
+                    $(".ans").hide();
+                    $(".spoiler").click(function() {
+                        $(this).toggleClass("active").next().slideToggle();
+
+                        if ($(this).is(".active")) {
+                            $(this).children('i#icon').css('transform', 'rotate(-90deg)');
+                        } else {
+                            $(this).children('i#icon').css('transform', 'rotate(0deg)');
+                        }
+
+
+
+                        return false;
+                    });
+                    $("a[href='" + window.location.hash + "']").parent(".ans").click();
+                });
+
+            </script>
+            <div class="c-b bg-sticker"><img class="ahack" src="img/cartelweb.jpg" alt=""></div>
         </div>
-        <script>
-            $(document).ready(function() {
-        $(".ans").hide();
-        $(".spoiler").click(function() {
-            $(this).toggleClass("active").next().slideToggle();
+        <div class="container-f bg-hack" id="join">
+            <h1>Únete</h1>
 
-            if ($(this).is(".active")) {
-                $(this).children('i#icon').css('transform', 'rotate(-90deg)');
-            } else {
-                $(this).children('i#icon').css('transform', 'rotate(0deg)');
-            }
+            <form action="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" target="hidden" method="POST" class="center" onsubmit="" name="join">
+                <input type="text" name="entry.1895290500" placeholder="Nombre" required>
+                <input type="text" name="entry.1169299309" placeholder="Apellidos" required>
+                <input type="email" name="entry.137172703" placeholder="E-mail" required>
+                <input type="submit">
+            </form>
+        </div>
+        <div class="container margin-a">
+            <div class="c-a"><img src="img/altenlogo.png" alt="" width="50px"></div>
+            <div class="c-b" style="text-align: right;"><img class="imgspacing" src="img/uvalogo.png" alt="" width="50px"><img class="imgspacing" src="img/etsitlogo.png" alt="" width="50px"><img class="imgspacing" src="img/adidaslogo.png" alt="" width="50px"></div>
+        </div>
+        <div class="container-f margin-a">
+            <div class="c-b center"><a class="footlink" href="codigo-de-conducta.html">Código de conducta</a>
 
-
-
-            return false;
-        });
-        $("a[href='" + window.location.hash + "']").parent(".ans").click();
-    });
-    
-</script>
-        <div class="c-b bg-sticker"><img class="ahack" src="img/cartelweb.jpg" alt=""></div>
-    </div>
-    <div class="container-f bg-hack" id="join">
-        <h1>Únete</h1>
-        
-        <form action="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" target="hidden" method="POST" class="center" onsubmit=""  name="join">
-            <input type="text" name="entry.1895290500" placeholder="Nombre" required>
-            <input type="text" name="entry.1169299309" placeholder="Apellidos" required>
-            <input type="email" name="entry.137172703" placeholder="E-mail" required>
-            <input type="submit">
-        </form> 
-    </div>
-    <div class="container margin-a">
-        <div class="c-a"><img src="img/altenlogo.png" alt="" width="50px"></div>
-        <div class="c-b" style="text-align: right;"><img class="imgspacing" src="img/uvalogo.png" alt="" width="50px"><img class="imgspacing" src="img/etsitlogo.png" alt="" width="50px"><img class="imgspacing"  src="img/adidaslogo.png" alt="" width="50px"></div>
-    </div>
-    <div class="container-f margin-a">
-        <div class="c-b center" ><a class="footlink" href="codigo-de-conducta.html">Código de conducta</a>
-        
-        <!--google forms reference
+                <!--google forms reference
         <a class="footlink hidden" href="">https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse?entry.1895290500="NOMBRE"&entry.1169299309="APELLIDOS"&entry.137172703=MAIL</a>
         -->
+            </div>
         </div>
-    </div>
-    <!--Hidden iframe to POST on google forms-->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" name="hidden" class="hidden"></iframe>
-     <!--Hidden iframe to POST on google forms-->
+        <!--Hidden iframe to POST on google forms-->
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdS-GMkn47BYFtxQeiARLdaCn4xduoS146ee-3FXIVdzzaCHw/formResponse" name="hidden" class="hidden"></iframe>
+        <!--Hidden iframe to POST on google forms-->
 </body>
+
 </html>
