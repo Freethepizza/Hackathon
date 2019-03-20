@@ -1,36 +1,121 @@
-/*STRETCH FW*/
 @import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
-@font-face {font-family: 'Hackathon';src: url(assets/hackathon.ttf) format('truetype');}
-body{margin:50px;background: #ddd;}
-.container{display: grid;grid-template-columns: 1fr 1fr;align-items: center;
-    justify-content: center;}
-.bg-white{background: #fff;}
-.container-f{display: grid;grid-template-columns: 1fr;}
-.bg-hack{background-image: url(img/bgjoin.jpg);background-attachment: fixed; background-size: cover;background-repeat: no-repeat;background-position: bottom;}
-.ahack{width: 100%;}
-.c-a{/*width: 100%;*/}
-.c-b{width: 100%;;}
-.padding{padding: 20px;}
-.spoiler {display: list-item;background-color: transparent;border: none;outline: none;color: #555;font-family: Hackathon;font-weight: 100;font-size: 24px;font-family: Hackathon;}
-.triangle{background-image: url(img/triangle.png);background-size: cover;}
-.spoiler:hover {color: #333 !important;}
-.ans{font-family: Hackathon;width: 90%;color:#333;}
-input {margin-top: 10px;margin-bottom: 40px;color: white;font-family: hackathon;background-color: transparent;outline: none;border-top: none;border-right: none;border-left: none;border-bottom: 5px solid white;}
-.imgspacing{margin-right: 10px;}
-.margin-a{margin-top: 10px;}
-.center{text-align: center;}
-.container-f>h1{font-family: hackathon;color:#fff;text-align: center;font-weight: 100;}
-ul{display: inline;padding-left: 0;}
-ul.menu>li{display: inline;list-style: none;padding-right: 25px;}
-ul>li>a{text-decoration: none;display: inline;}
-li>a>h1{font-family: hackathon;color:#333;display: inline;font-size: 42px;}
-li>a>h2{font-family: hackathon;color:#555;display: inline;}
-h2:hover{color: #333!important}
-.footlink{font-family: hackathon;text-decoration: none;color:#999;font-size: 12px;}
-.footlink:hover{color:#333;}
-.darkbg{background:#111!important;}
-.container-f>p{font-family: hackathon; color:#333;}
-.container-f>ul>li{list-style: none;margin-bottom: 10px; font-family: hackathon; color:#333;text-align: left;padding: 0 20px 0 20px}
-.bg-white>h1{color: #333;}
-.container-f>h2{font-family: hackathon;color:#333;}
-.hidden{display: none;}
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+body{margin: 0;}
+.row-0 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 90vh;
+    margin: 5px
+}
+
+.altenhack{
+    
+}
+
+.logo{
+    width: auto;
+    height: auto;
+    margin: 20px;
+}
+
+.data{
+    margin-top: 180px;
+    margin-left: 20px;
+    width: 80%;
+}
+
+.runner{
+    background-image: url("img/corredor.png");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+.center-menu{
+    height: 10vh;
+}
+
+ul.menu{
+    width: 350px;
+    margin: 0 auto;
+}
+ul.menu>li{
+    display: inline; list-style: none;
+    width: 100px;
+    
+}
+ul.menu>li>a{
+    font-family: lato;
+    color:#fff;
+    text-decoration: none;display: inline;
+    background-color: #1C355E;padding: 5px 10px 10px;
+    border-radius: 15px 15px 15px 15px
+}
+ul.menu>li>a:hover{
+    background-color: #E30613;
+}
+.faq{
+    list-style: none;
+    width: 350px;
+    margin: 0 auto;
+}
+.tri{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;/*change on responsive*/
+}
+.bluebg{background-color:#1C355E;}
+.bluebg>h1{color:#fff;font-family:lato;font-weight:100;margin:0 0 0 5px;}
+.greybg{background-color:rgba(153,153,153,1) }
+.greybg>h1{color:#1C355E;font-family:lato;font-weight:100;margin:0 0 0 5px;}
+.blackbg{background-color: #000;}
+.blackbg>h1{color:#fff;font-family:lato;font-weight:100;margin:0 0 0 5px;}
+.whitebg{background-color: #fff;}
+.whitebg>h1{color: rgba(153,153,153,1);font-family:lato;font-weight:100;margin:0 0 0 5px;}
+.spoiler {display: list-item;border: none;outline: none;color: #008BD2;font-weight: 100;font-size: 22px;font-family: raleway;}
+.ans{font-family: lato;}
+.centerin{text-align: center;}
+.row{padding: 0 25px 25px 0;}
+.red{background-color: #E30613!important}
+.active{color:#1C355E}
+
+input{
+    margin: 0 auto;
+    display: list-item;
+    background: transparent;
+    outline: none;
+    border:none;
+    border-bottom: 2px solid #1C355E;
+    color:#fff;
+    font-family: lato;
+    font-size: 24px;
+}
+
+
+
+.tab {
+  display: none;
+}
+
+#nextBtn{
+    background: transparent;
+    border: none;
+    outline: none;
+    color:rgba(153,153,153,1);
+    font-family: lato;
+    font-size:24px;
+}
+#nextBtn:hover{
+    color: #fff;
+}
+
+#prevBtn{
+    background: transparent;
+    border: none;
+    outline: none;
+    color:rgba(153,153,153,1);
+    font-family: lato;
+    font-size:24px;
+}
+#prevBtn:hover{
+    color: #fff;
+}
