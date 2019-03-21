@@ -87,7 +87,7 @@
             
         </form>-->
         
-        <form id="regForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdfhqRe3UFceF7Al9bPiAk_PZh3xb4M0YeTTrSXsqhhwSVgLQ/formResponse" method="post">
+        <form id="regForm" action="https://docs.google.com/forms/d/e/1FAIpQLSdfhqRe3UFceF7Al9bPiAk_PZh3xb4M0YeTTrSXsqhhwSVgLQ/formResponse" method="POST" target="invisible">
 
 
 <!-- One "tab" for each step in the form: -->
@@ -103,6 +103,10 @@
 <div class="tab"><h2 style="text-align: center;font-family: lato;color:333;font-weight: 100">Si vienes con amigos, anota aquí sus nombres y apellidos (separados por comas)</h2>
   <p><input placeholder="Equipo" name="entry.299308459" oninput="this.className = ''" pass></p>
 </div>
+<div class="tab"><p align=center>
+    <textarea style="border:none;background:rgba(0,0,0,0.4);font-family: lato;color:#333;font-size: 20px;padding:5px;" name="entry.560206950" rows="5" ></textarea>
+    </p>
+</div>
 <div class="tab">
   <p><input placeholder="LinkedIn" name="entry.299308459" id="li" oninput="this.className = ''" pass></p>
   <p><input placeholder="GitHub" name="entry.1400884324" id="gh" oninput="this.className = ''" pass></p>
@@ -110,9 +114,11 @@
   <p><input placeholder="Website" name="entry.1433289383" id="ws" oninput="this.className = ''" pass></p>
 </div>
 
+
 <div style="text-align:center;margin-top:40px;">
     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-    <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente</button>
+    <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente<input type="submit" id="nextBtn"></button>
+    <input type="submit" id="nextBtn" class="envio" style="margin-top: 5px;">
             </div>
 
 
@@ -145,8 +151,12 @@ function showTab(n) {
   }
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Enviar";
+    document.getElementById("nextBtn").style.display = "none"
+      document.getElementsByClassName("envio").style.display = "block"
   } else {
+      document.getElementById("nextBtn").style.display = "inline"
     document.getElementById("nextBtn").innerHTML = "Siguiente";
+      document.getElementsByClassName("envio").style.display = "none"
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
@@ -220,5 +230,7 @@ function fixStepIndicator(n) {
         </div>
         <div class="container-f margin-a">
             <div class="c-b" style="text-align: center"><a style="color:#333" href="codigo-de-conducta.html">Código de conducta</a><span>&nbsp;|</span><a style="color:#333" href="https://www.alten.es/politica-privacidad-contacto/">Aviso Legal</a></div></div>
+            
+<iframe name="invisible" src="https://docs.google.com/forms/d/e/1FAIpQLSdfhqRe3UFceF7Al9bPiAk_PZh3xb4M0YeTTrSXsqhhwSVgLQ/formResponse" frameborder="0"></iframe>
 </body>
 </html>
