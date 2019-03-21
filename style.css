@@ -38,6 +38,7 @@ body{margin: 0;}
 ul.menu{
     width: 350px;
     margin: 0 auto;
+    padding-top: 10px
 }
 ul.menu>li{
     display: inline; list-style: none;
@@ -67,8 +68,8 @@ ul.menu>li>a:hover{
 .bluebg>h1{color:#fff;font-family:lato;font-weight:100;margin:0 0 0 5px;}
 .greybg{background-color:rgba(153,153,153,1) }
 .greybg>h1{color:#1C355E;font-family:lato;font-weight:100;margin:0 0 0 5px;}
-.blackbg{background-color: #000;}
-.blackbg>h1{color:#fff;font-family:lato;font-weight:100;margin:0 0 0 5px;}
+.blackbg{background-image:url(img/bgins.gif);}
+.blackbg>h1{color:#333;font-family:lato;font-weight:100;margin:0 0 0 5px;}
 .whitebg{background-color: #fff;}
 .whitebg>h1{color: rgba(153,153,153,1);font-family:lato;font-weight:100;margin:0 0 0 5px;}
 .spoiler {display: list-item;border: none;outline: none;color: #008BD2;font-weight: 100;font-size: 22px;font-family: raleway;}
@@ -85,13 +86,16 @@ input{
     outline: none;
     border:none;
     border-bottom: 2px solid #1C355E;
-    color:#fff;
+    color:#333;
     font-family: lato;
     font-size: 24px;
 }
 
-
-
+@media screen and (max-width: 768px) {
+    .runner{background-size: cover;}
+}
+.container{display: grid;grid-template-columns: 1fr 1fr;align-items: center;
+    justify-content: center;}
 .tab {
   display: none;
 }
@@ -105,7 +109,7 @@ input{
     font-size:24px;
 }
 #nextBtn:hover{
-    color: #fff;
+    color: #333;
 }
 
 #prevBtn{
@@ -117,5 +121,5 @@ input{
     font-size:24px;
 }
 #prevBtn:hover{
-    color: #fff;
+    color: #333;
 }
