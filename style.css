@@ -65,15 +65,16 @@ ul.menu>li>a:hover{
     grid-template-columns: 1fr 1fr 1fr;/*change on responsive*/
 }
 .bluebg{background-color:#1C355E;}
-.bluebg>h1{color:#fff;font-family:lato;font-weight:100;margin:0 0 0 5px;}
+.bluebg>h1{color:#fff;font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px}
 .greybg{background-color:rgba(153,153,153,1) }
-.greybg>h1{color:#1C355E;font-family:lato;font-weight:100;margin:0 0 0 5px;}
+.greybg>h1{color:#1C355E;font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px}
 .blackbg{background-image:url(img/bgins.gif);}
-.blackbg>h1{color:#333;font-family:lato;font-weight:100;margin:0 0 0 5px;}
+.blackbg>h1{color:#333;font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px}
 .whitebg{background-color: #fff;}
-.whitebg>h1{color: rgba(153,153,153,1);font-family:lato;font-weight:100;margin:0 0 0 5px;}
+.whitebg>h1{color: rgba(153,153,153,1);font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px}
 .spoiler {display: list-item;border: none;outline: none;color: #008BD2;font-weight: 100;font-size: 22px;font-family: raleway;}
-.ans{font-family: lato;}
+.ans{font-family: lato;margin-left: 25px}
+.ansshow{font-family: lato;margin-left: 25px;color:#ccc;margin-left:15%;}
 .centerin{text-align: center;}
 .row{padding: 0 25px 25px 0;}
 .red{background-color: #E30613!important}
