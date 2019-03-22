@@ -69,13 +69,13 @@ ul.menu>li>a:hover{
     grid-template-columns: 1fr 1fr 1fr;/*change on responsive*/
 }
 .bluebg{background-color:#1C355E;}
-.bluebg>h1{color:#fff;font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px;text-shadow: 2px 2px #222;}
+.bluebg>h1{color:#fff;font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px;}
 .greybg{background-color:rgba(153,153,153,1) }
-.greybg>h1{color:#1C355E;font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px;text-shadow: 2px 2px #222;}
+.greybg>h1{color:#1C355E;font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px;}
 .blackbg{background-image:url(img/bgins.gif);}
 .blackbg>h1{color:#333;font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px}
 .whitebg{background-color: #fff;}
-.whitebg>h1{color: rgba(153,153,153,1);font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px;text-shadow: 2px 2px #222;}
+.whitebg>h1{color: rgba(153,153,153,1);font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px;}
 .spoiler {display: list-item;border: none;outline: none;color: #008BD2;font-weight: 100;font-size: 22px;font-family: raleway;cursor: pointer;}
 .ans{font-family: lato;margin-left: 25px}
 .ansshow{font-family: lato;margin-left: 25px;color:#ccc;margin-left:15%;}
@@ -84,9 +84,9 @@ ul.menu>li>a:hover{
 .red{background-color: #E30613!important}
 .active{color:#1C355E}
 .two_col{display: grid;grid-template-columns: 20% 80%;}
-.dtitle{font-family: raleway;font-size: 28px;text-shadow: 5px 5px #222;}
+.dtitle{font-family: raleway;font-size: 28px;}
 
-.dtitle_{text-align: center; font-family: raleway;font-size: 28px;text-shadow: 2px 2px #ccc;}
+.dtitle_{text-align: center; font-family: raleway;font-size: 28px;}
 
 
 input{
