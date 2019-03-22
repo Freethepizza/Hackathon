@@ -163,9 +163,12 @@ Entendemos el talento como una combinación de habilidades, capacidades y actitu
 
 
 <div style="text-align:center;margin-top:40px;">
+   <div id="optin">
+    <span style="display: inline;font-family: lato;">Acepto los términos y condiciones &nbsp;</span> <input style="display:inline" type="checkbox" onchange='handleChange(this);'></div>
     <button type="button" id="prevBtn" onclick="nextPrev(-1)">Anterior</button>
-    <button type="button" id="nextBtn" onclick="nextPrev(1)">Siguiente<input type="submit" id="nextBtn"></button>
-    <input type="submit" id="nextBtn" class="envio" style="margin-top: 5px;">
+    <button type="button" id="nextBtn" onclick="nextPrev(1)" >Siguiente</button>
+    <input type="submit" id="send" class="envio" style="margin-top: 5px;" disabled>
+    
             </div>
 
 
@@ -183,6 +186,14 @@ Entendemos el talento como una combinación de habilidades, capacidades y actitu
         
         
     <script>
+function handleChange(checkbox) {
+    if(checkbox.checked == true){
+        document.getElementById("send").removeAttribute("disabled");
+    }else{
+        document.getElementById("send").setAttribute("disabled", "disabled");
+   }
+}
+        
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 
@@ -199,11 +210,12 @@ function showTab(n) {
   if (n == (x.length - 1)) {
     document.getElementById("nextBtn").innerHTML = "Enviar";
     document.getElementById("nextBtn").style.display = "none"
-      document.getElementsByClassName("envio").style.display = "block"
+      document.getElementById("send").style.display = "inline"
+       document.getElementById("optin").style.display = "block"
   } else {
       document.getElementById("nextBtn").style.display = "inline"
     document.getElementById("nextBtn").innerHTML = "Siguiente";
-      document.getElementsByClassName("envio").style.display = "none"
+       document.getElementById("send").style.display = "none"
   }
   //... and run a function that will display the correct step indicator:
   fixStepIndicator(n)
@@ -278,6 +290,6 @@ function fixStepIndicator(n) {
         <div class="container-f margin-a">
             <div class="c-b" style="text-align: center"><a style="color:#333" href="codigo-de-conducta.html">Código de conducta</a><span>&nbsp;|&nbsp;</span><a style="color:#333" href="https://www.alten.es/politica-privacidad-contacto/">Aviso Legal</a></div></div>
             
-<iframe name="invisible" src="https://docs.google.com/forms/d/e/1FAIpQLSdfhqRe3UFceF7Al9bPiAk_PZh3xb4M0YeTTrSXsqhhwSVgLQ/formResponse" frameborder="0"></iframe>
+<iframe style="display:none " name="invisible" src="https://docs.google.com/forms/d/e/1FAIpQLSdfhqRe3UFceF7Al9bPiAk_PZh3xb4M0YeTTrSXsqhhwSVgLQ/formResponse" frameborder="0"></iframe>
 </body>
 </html>
