@@ -131,6 +131,9 @@ input{
     .row_tri{
         grid-template-columns: 1fr;
     }
+    .tetra{
+        grid-template-columns: 1fr 1fr!important;
+    }
 }
 .container{display: grid;grid-template-columns: 1fr 1fr;align-items: center;
     justify-content: center;}
@@ -219,7 +222,6 @@ a{text-decoration: none;}
     width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 10px;
     text-align: center;
 }
 
