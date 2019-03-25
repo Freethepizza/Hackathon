@@ -1,5 +1,11 @@
 @import "https://use.fontawesome.com/releases/v5.7.0/css/all.css";
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+@font-face {
+  font-family: icons;
+  src: url(assets/icons.ttf);
+}
+
 body{margin: 0;    overflow-x: hidden;}
 .row-0 {
     display: grid;
@@ -25,7 +31,7 @@ body{margin: 0;    overflow-x: hidden;}
 }
 
 .runner{
-    background-image: url("img/corredor.png");
+    background-image: url("img/corredor_logo.png");
     background-size: contain;
     background-position: right;
     background-repeat: no-repeat;
@@ -73,6 +79,8 @@ ul.menu>li>a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;/*change on responsive*/
 }
+
+.raleway{font-family: raleway;font-weight: 100;font-size: 22px;}
 .bluebg{background-color:#1C355E;}
 .bluebg>h1{color:#fff;font-family:lato;font-weight:100;margin:0 0 0 5px;margin-left:50px;}
 .greybg{background-color:rgba(153,153,153,1) }
@@ -175,6 +183,14 @@ a{text-decoration: none;}
     background-color: #E30613
 }
 
+.icons{
+    font-family: icons;
+}
+
+.medium{
+    font-size: 58px;
+}
+
 .coloroverride{color:#fff!important}
 
 .envio{display: none;background: #1C355E;padding: 5px;
@@ -194,16 +210,27 @@ a{text-decoration: none;}
 
 #modal{
    position: fixed; /* Sit on top of the page content */
-    display: none;
+  display: none;
   width: 100%; /* Full width (cover the whole page) */
   height: 100%; /* Full height (cover the whole page) */
   top: 0; 
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  background-color: rgba(0,0,0,0.9); /* Black background with opacity */
   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
   cursor: pointer; /* Add a pointer on hover */
+    text-align: center;
+}
+#modal>a>h1{
+
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 100%;
+    text-decoration: none;
+    font-family:lato;
+    color: #fff;
+    font-size: 4vw;
 }
 
 #prevBtn{
