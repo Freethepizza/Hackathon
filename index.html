@@ -28,17 +28,21 @@
     </div>
     <div class="row bluebg" id="descripcion">
         <h1 style="font-size: 72px;">Descripción</h1>
-
-        <div class="ansshow two_col " style="margin-top: 25px"><span class="dtitle">INNOVATION</span>
-            Damos un paso más en nuestra apuesta por la innovación y lo hacemos contigo. Los próximos 26 y 27 de abril, te esperamos en el primer hackathon, que celebraremos en colaboración con la Escuela de Ingeniería Informática de la Universidad de Valladolid.
-        </div><br>
-
-        <div class="ansshow two_col "><span class="dtitle">NEEDS</span>
-            Personas apasionadas por la tecnología y el deporte, con ganas de vivir nuevas experiencias, y de acelerar su incorporación al mercado laboral. Si esta es tu definición, inscríbete ya en el formulario que encontrarás al final de la página.
-        </div><br>
-        <div class="ansshow two_col "><span class="dtitle">TALENT</span>
-            Entendemos el talento como una combinación de habilidades, capacidades y actitudes que podrás poner en práctica en esta trepidante competición. Durante 24 horas ininterrumpidas podrás demostrar tu talento, además de compartir experiencias con compañeros de profesión. En ALTEN, los límites los pones tú.</div><br>
-        <div></div>
+        <div class="row_tri">
+            <div class="ansshow">
+                <h1>INNOVATION</h1>
+                Damos un paso más en nuestra apuesta por la innovación y lo hacemos contigo. Los próximos 26 y 27 de abril, te esperamos en el primer hackathon, que celebraremos en colaboración con la Escuela de Ingeniería Informática de la Universidad de Valladolid.
+            </div>
+            <div class="ansshow">
+                <h1>NEEDS</h1>
+                Personas apasionadas por la tecnología y el deporte, con ganas de vivir nuevas experiencias, y de acelerar su incorporación al mercado laboral. Si esta es tu definición, inscríbete ya en el formulario que encontrarás al final de la página.
+            </div>
+            <div class="ansshow">
+                <h1>TALENT</h1>
+                Entendemos el talento como una combinación de habilidades, capacidades y actitudes que podrás poner en práctica en esta trepidante competición. Durante 24 horas ininterrumpidas podrás demostrar tu talento, además de compartir experiencias con compañeros de profesión. En ALTEN, los límites los pones tú.
+            </div>
+            <div></div>
+        </div>
 
     </div>
     <div class="row greybg" id="retos">
@@ -86,7 +90,7 @@
             <br>
             <li class="spoiler" id="spoiler"><i id="icon" class="fas fa-angle-down"></i> ¿Qué tengo que llevar?</li>
 
-            <div class="ans"><br>Es imprescindible que traigas tu <b>equipo informático</b>. ¡El resto lo ponemos nosotros! Ten en cuenta que el evento dura 24 horas ininterrumpidas, así que lo que consideres necesario para tu higiene personal, y descansar en el espacio que se habilitará para ello.    </div> <br>
+            <div class="ans"><br>Es imprescindible que traigas tu <b>equipo informático</b>. ¡El resto lo ponemos nosotros! Ten en cuenta que el evento dura 24 horas ininterrumpidas, así que lo que consideres necesario para tu higiene personal, y descansar en el espacio que se habilitará para ello. </div> <br>
             <li class="spoiler" id="spoiler"><i id="icon" class="fas fa-angle-down"></i> ¿Dónde tengo que acudir?</li>
             <div class="ans"><br>A tu llegada a la Escuela de Ingeniería Informática de la Uva, dirígete al vestíbulo principal para recoger tu acreditación. Una vez allí, te indicaremos cuáles son los siguientes pasos a seguir. ¡Te esperamos!<br>
                 <div style="text-align: center"><br>
@@ -153,16 +157,17 @@
             </div>
             <div class="tab">
                 <h2 style="text-align: center;font-family: lato;color:333;font-weight: 100">Si tienes ya tienes tu equipo formado, escribe los nombres y apellidos del resto de componentes (separados por comas).<br>
-                En caso contrario se te asignará un equipo el día del evento.</h2>
+                    En caso contrario se te asignará un equipo el día del evento.</h2>
                 <p><input placeholder="Equipo" name="entry.299308459" oninput="this.className = ''" pass></p>
             </div>
             <div class="tab">
-               <p align=center>
-                   <input type="text" placeholder="¿Que has estudiado?">
-                </p>
-                 <h2 style="text-align: center;font-family: lato;color:333;font-weight: 100">Describe brevemente tu ocupación actual:</h2>
                 <p align=center>
-                    <textarea style="border:none;background:rgba(0,0,0,0.4);font-family: lato;color:#333;font-size: 20px;padding:5px;" name="entry.560206950" rows="5" cols="40"></textarea><!--FALTA TITULO-->
+                    <input type="text" placeholder="¿Que has estudiado?">
+                </p>
+                <h2 style="text-align: center;font-family: lato;color:333;font-weight: 100">Describe brevemente tu ocupación actual:</h2>
+                <p align=center>
+                    <textarea style="border:none;background:rgba(0,0,0,0.4);font-family: lato;color:#333;font-size: 20px;padding:5px;" name="entry.560206950" rows="5" cols="40"></textarea>
+                    <!--FALTA TITULO-->
                 </p>
             </div>
             <div class="tab">
@@ -171,7 +176,7 @@
                 <p><input placeholder="StackOverflow" name="entry.634789620" id="so" oninput="this.className = ''" pass></p>
                 <p><input placeholder="Website" name="entry.1433289383" id="ws" oninput="this.className = ''" pass></p>
             </div>
-            
+
             <div id="finish">
                 <h1>TODO LISTO!</h1>
             </div>
@@ -200,9 +205,10 @@
 
 
         <script>
-            function submitted(){
-                 document.getElementById("modal").style.display = "block";
+            function submitted() {
+                document.getElementById("modal").style.display = "block";
             }
+
             function handleChange(checkbox) {
                 if (checkbox.checked == true) {
                     document.getElementById("send").removeAttribute("disabled");
@@ -303,16 +309,25 @@
     </div>
     <div id="modal" class="modal">
         <a href="index.html">TODO listo!</a>
-        
+
     </div>
     <div class="container margin-a" style="margin-top:10px;padding-left: 30px;padding-right: 35px;">
-        <div class="c-a"><a href="https://alten.es"><img src="img/altenlogo.png" alt="" width="50px"></a></div>
-        <div class="c-b" style="text-align: right;"><img style="padding:0px 5px 0px 5px" class="imgspacing" src="img/adidaslogo.png" alt="" width="50px"><img class="imgspacing" src="img/uvalogo.png" alt="" width="50px">&nbsp;<img class="imgspacing" src="img/etsitlogo.png" alt="" width="50px"></div>
+        <div class="c-a"><a href="https://alten.es"><img src="img/altenlogo.png" alt="" width="10%"></a></div>
+        <div class="c-b" style="text-align: right"><img src="img/colaboran.png" width="10%" alt="">&nbsp;&nbsp;<img src="img/adidaslogo.png" width="10%" alt="">&nbsp;&nbsp;<img src="img/uvalogo.png" width="10%" alt="">&nbsp;&nbsp;<img src="img/etsitlogo.png" width="10%" alt="">&nbsp;&nbsp;
+        <img src="img/patrocina.png" width="10%" alt="">&nbsp;&nbsp;<img src="img/logobi.png" width="10%" alt="">&nbsp;&nbsp;
+        </div>
+        
+         
+           
+    
+    
+    
     </div>
     <div class="container-f margin-a">
-        <div class="c-b" style="text-align: center"><a style="color:#333" href="BASES_REGULADORAS_ALTEN_HACK_2019.pdf">Bases reguladoras</a><span>&nbsp;|&nbsp;</span><a style="color:#333" href="codigo-de-conducta.html">Código de conducta</a><span>&nbsp;|&nbsp;</span><a style="color:#333" href="https://www.alten.es/politica-privacidad-contacto/">Aviso Legal</a></div><br>
+        <div class="c-b" style="text-align: center">
+        <a style="color:#333" href="BASES_REGULADORAS_ALTEN_HACK_2019.pdf">Bases reguladoras</a><span>&nbsp;|&nbsp;</span><a style="color:#333" href="codigo-de-conducta.html">Código de conducta</a><span>&nbsp;|&nbsp;</span><a style="color:#333" href="https://www.alten.es/politica-privacidad-contacto/">Aviso Legal</a></div><br>
     </div>
-<br>
+    <br>
     <iframe style="display:none " name="invisible" src="https://docs.google.com/forms/d/e/1FAIpQLSdfhqRe3UFceF7Al9bPiAk_PZh3xb4M0YeTTrSXsqhhwSVgLQ/formResponse" frameborder="0"></iframe>
 </body>
 </html>

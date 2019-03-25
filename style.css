@@ -35,6 +35,11 @@ body{margin: 0;    overflow-x: hidden;}
     height: 10vh;
 }
 
+.row_tri{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
 ul.menu{
     width: 350px;
     margin: 0 auto;
@@ -111,6 +116,9 @@ input{
 @media screen and (max-width: 768px) {/*botones siguiente y prev fondo en los campos*/
     .runner{background-size: cover;}
     .two_col{
+        grid-template-columns: 1fr;
+    }
+    .row_tri{
         grid-template-columns: 1fr;
     }
 }
