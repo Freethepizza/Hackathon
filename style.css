@@ -190,7 +190,11 @@ a{text-decoration: none;}
 }
 
 .medium{
-    font-size: 58px;
+    font-size:100px;
+}
+
+.less{
+   
 }
 
 .coloroverride{color:#fff!important}
@@ -220,7 +224,7 @@ a{text-decoration: none;}
 }
 
 .claim{
-    font-size:32px;
+    font-size:28px;
     text-align: center;
     font-family: lato;
     font-style: italic;
