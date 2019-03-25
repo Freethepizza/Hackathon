@@ -54,8 +54,7 @@ ul.menu{
     padding-top: 10px
 }
 ul.menu>li{
-    display: inline; list-style: none;
-    width: 100px;
+    display: inline; list-style: none;margin-left:0px;
     
 }
 ul.menu>li>a{
@@ -135,6 +134,11 @@ input{
         grid-template-columns: 1fr 1fr!important;
     }
 }
+
+@media (height: 375px) {
+    .data{margin-top: 0}
+}
+
 .container{display: grid;grid-template-columns: 1fr 1fr;align-items: center;
     justify-content: center;}
 .container-f{display: grid;grid-template-columns: 1fr;}
