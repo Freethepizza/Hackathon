@@ -133,6 +133,9 @@ input{
     .tetra{
         grid-template-columns: 1fr 1fr!important;
     }
+    .hidee{
+    display: none!important;
+}
 }
 
 @media (height: 375px) {
@@ -283,4 +286,8 @@ a{text-decoration: none;}
 }
 #prevBtn:hover{
    background-color: #E30613;
+}
+
+.hidee{
+    display: inline;
 }
