@@ -204,6 +204,15 @@ a{text-decoration: none;}
    
 }
 
+.select{
+    padding: 5px;
+    font-family: lato;
+    font-size: 22px;
+    background-color: rgba(0,0,0,0.1);
+    border: none;
+    border-bottom: 2px solid #1C355E;
+}
+
 .coloroverride{color:#fff!important}
 
 .envio{display: none;background: #1C355E;padding: 5px;
